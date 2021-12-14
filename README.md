@@ -3,7 +3,7 @@
 **This is basically a translation of [w0rldwind's script](https://github.com/w0rldwind/mina).** Code unchanged, only translated in English.
 
 Mina will restart when:
-* Node block height is lagging behing, or
+* Node block height is lagging behing, or when,
 * Node stutus is CONNECTING, LISTENING, OFFLINE, BOOTSTRAP, CATCHUP (Set the appropriate time required to load a node in `m.sh`)
 
 
@@ -24,10 +24,9 @@ chmod +x id.py
 Install & Configure
 ---
 ```
-apt update
-apt install python3-pip
+sudo apt update
+sudo apt install -y python3-pip jq
 pip3 install pyTelegramBotAPI
-apt install jq
 ```
 
 1. Register a bot with [@BotFather](https://t.me/BotFather)
